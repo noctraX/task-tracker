@@ -49,13 +49,13 @@ public class Main {
     public static int usage(){
         System.out.println("""
                     Usage:
-                        task-cli add "<task description>"
-                        task-cli update <id> "<new task description>"
-                        task-cli delete <id>
-                        task-cli mark-in-progress <id>
-                        task-cli mark-done <id>
-                        task-cli list
-                        task-cli list <status>
+                        task-tracker add "<task description>"
+                        task-tracker update <id> "<new task description>"
+                        task-tracker delete <id>
+                        task-tracker mark-in-progress <id>
+                        task-tracker mark-done <id>
+                        task-tracker list
+                        task-tracker list <status>
                     
                     Commands:
                         add               Add a new task
@@ -71,15 +71,15 @@ public class Main {
                         done
                   
                     Examples:
-                        task-cli add "Buy groceries"
-                        task-cli update 1 "Buy groceries and cook dinner"
-                        task-cli delete 1
-                        task-cli mark-in-progress 1
-                        task-cli mark-done 1
-                        task-cli list
-                        task-cli list done
-                        task-cli list todo
-                        task-cli list in-progress
+                        task-tracker add "Buy groceries"
+                        task-tracker update 1 "Buy groceries and cook dinner"
+                        task-tracker delete 1
+                        task-tracker mark-in-progress 1
+                        task-tracker mark-done 1
+                        task-tracker list
+                        task-tracker list done
+                        task-tracker list todo
+                        task-tracker list in-progress
                     """);
         return 1;
     }
